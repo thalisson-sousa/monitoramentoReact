@@ -1,0 +1,34 @@
+{
+  "firewall": [
+    {
+      "id": "1",
+      "ip": "8.8.8.8",
+      "name": "Google"
+    },
+    {
+      "id": "2",
+      "ip": "9.9.9.9",
+      "name": "Quad9"
+    },
+    {
+      "id": "3",
+      "ip": "1.1.1.1",
+      "name": "Cloudflare"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234"
+    }
+  ],
+  "links": [
+    {
+      "id": "1",
+      "name": "Google DNS 2",
+      "ip": "8.8.4.4",
+      "firewallId": "1"
+    }
+  ]
+}
