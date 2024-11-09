@@ -1,0 +1,6 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.878);
+    border: none;
+    border-radius: 10px;
+    z-index: 999;
+}
