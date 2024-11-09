@@ -1,0 +1,13 @@
+.title {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
