@@ -1,0 +1,45 @@
+.login-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 100dvh;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+  margin-left: -1em;
+}
+
+.rigthSide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+input {
+  border: none;
+  color: black;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+
+button {
+  padding: 1em;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+img {
+  width: 300px;
+}
