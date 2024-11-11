@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { Navigate } from 'react-router-dom';
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -39,6 +40,8 @@ export default function LinkDetails() {
   }
 
   const onSubmit = (data) => {
+    data.firewallId = state.id;
+
     axios.post(url, data).then(() => {
         notify("Cadastrado com sucesso!");
         setModalOpen(!isOpen);
@@ -53,10 +56,14 @@ export default function LinkDetails() {
       <h1>MONITOR: {state.name}</h1>
       <ToastContainer />
 
-      <div className="btn">
-        <button className="btnCad" onClick={updateModal}>
-          {isOpen ? "Fechar" : "Cadastrar"}
-        </button>
+      <div className={styles.buttons}>
+        <Link className={styles.backButton} to="/">Voltar</Link>
+
+        <div>
+          <button className="btnCad" onClick={updateModal}>
+            {isOpen ? "Fechar" : "Cadastrar"}
+          </button>
+        </div>
       </div>
 
       <Modal modal={isOpen}>

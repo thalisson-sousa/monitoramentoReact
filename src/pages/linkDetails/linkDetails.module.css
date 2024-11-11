@@ -18,3 +18,17 @@
 .modalInput {
     color: white;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backButton {
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    width: 60px;
+    padding: 0.5em;
+    border-radius: 5px;
+}
