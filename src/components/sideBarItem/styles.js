@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex; // Você pode definir flex se necessário, mas não precisa condicionar aqui
-  flex-direction: column;
+  //flex-direction: column;
   background-color: #1A202C; 
   font-size: 20px;
   color: white;

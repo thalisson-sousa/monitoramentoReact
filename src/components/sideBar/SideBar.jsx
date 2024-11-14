@@ -8,6 +8,7 @@ import {
   FaChartBar,
   FaGoogleDrive,
   FaDoorOpen,
+  FaFire,
 } from "react-icons/fa";
 
 import styles from "./SideBar.module.css";
@@ -32,10 +33,11 @@ export default function Sidebar({ active }) {
       <Content>
         <SidebarItem Icon={FaHome} Text="Dashboard" to="/" />
         <SidebarItem Icon={FaUserAlt} Text="Users" to="/user" />
-        <SidebarItem Icon={FaGoogleDrive} Text="Links" to="/register" />
-        <SidebarItem Icon={FaChartBar} Text="Statistics" to="/statistics" />
-        <SidebarItem Icon={FaRegFileAlt} Text="Reports" to="/reports" />
-        <SidebarItem Icon={FaRegSun} Text="Settings" to="/settings" />
+        <SidebarItem Icon={FaFire} Text="Firewalls" to="/firewalls" />
+        <SidebarItem Icon={FaGoogleDrive} Text="Links" to="/links" />
+        <SidebarItem Icon={FaChartBar} Text="Statistics" to="/" />
+        <SidebarItem Icon={FaRegFileAlt} Text="Reports" to="/" />
+        <SidebarItem Icon={FaRegSun} Text="Settings" to="/" />
         <div className={styles.logoutButton}  onClick={logOut}>
           <FaDoorOpen />
           <p>Logout</p>

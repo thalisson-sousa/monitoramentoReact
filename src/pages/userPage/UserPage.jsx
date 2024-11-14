@@ -202,6 +202,7 @@ export default function UserPage() {
             ))}
           </tbody>
         </table>
+        <p>Count: {links.length}</p>
       </div>
     </section>
   );

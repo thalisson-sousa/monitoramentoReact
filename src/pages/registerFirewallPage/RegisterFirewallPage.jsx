@@ -99,7 +99,7 @@ export default function RegisterPage() {
 
   return (
     <section>
-      <h2>Página de Cadastro</h2>
+      <h2>Página de Cadastro Firewalls</h2>
       <ToastContainer />
       <div className="btn">
         <button className="btnCad" onClick={updateModal}>
@@ -216,6 +216,7 @@ export default function RegisterPage() {
             ))}
           </tbody>
         </table>
+        <p>Count: {links.length}</p>
       </div>
     </section>
   );

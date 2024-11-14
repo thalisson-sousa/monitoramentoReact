@@ -1,7 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import DashBoard from './pages/dashBoard/DashBoard';
 import UserPage from './pages/userPage/UserPage';
-import RegisterPage from './pages/registerPage/RegisterPage';
+import RegisterFirewallPage from './pages/registerFirewallPage/RegisterFirewallPage';
+import RegisterLinksPage from './pages/registerLinkPage/RegisterLinksPage';
 import Home from './pages/home/Home'; 
 import LoginPage from './pages/loginPage/LoginPage';
 import PrivateRoute from './components/privateRoute/PrivateRoute';
@@ -26,8 +27,12 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><UserPage /></PrivateRoute>
             },
             {
-                path: "register", 
-                element: <PrivateRoute><RegisterPage /> </PrivateRoute>
+                path: "firewalls", 
+                element: <PrivateRoute><RegisterFirewallPage /> </PrivateRoute>
+            },
+            {
+                path: "links", 
+                element: <PrivateRoute><RegisterLinksPage /> </PrivateRoute>
             },
             {
                 path: "details", 
