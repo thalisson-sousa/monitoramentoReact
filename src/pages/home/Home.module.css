@@ -5,8 +5,7 @@
 
 .renderPage {
     width: 100%;
-    height: 100dvi;
-    padding: 1em;
+    height: 100vh;
     color: black;
     background-color: aliceblue;
 }
